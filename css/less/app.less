@@ -1,0 +1,110 @@
+@import '../vendors/bootstrap/less/bootstrap.less';
+
+/*Gunnar Theme Colors*/
+@yellow: #fbf728;
+@grey: #3b3939;
+@white: #fff;
+@black: #000;
+@dark-grey: #393939;
+@med-dark-grey: #262323;
+@light-grey: #393939;
+@offwhite: #c5c5c3;
+
+/*Gunnar Theme*/
+body {
+    background: @grey;
+    color: @white;
+    #gunnar_nav {
+        padding-top: 20px;
+        background: @yellow;
+        color: @dark-grey;
+        border-bottom: none;
+        margin-bottom: 0px;
+        height: 91px;
+        .navbar-brand {
+            font-size: 44px;
+        }
+    }
+    #gunnar_welcome {
+        background: @black;
+        #gunnar_head {
+            width: 100%;
+            background: url("../resources/images/gunnar_02.png") no-repeat center center;
+            height: 474px;
+            margin-top: -12px;
+            z-index: 1010;
+            position: relative;
+            #banner_welcome {
+                margin-top: 100px;
+                .make-md-column(6);
+                .make-md-column-offset(5);
+                span {
+                    display: block;
+                }
+                .banner_welcome_header {
+                    color: @yellow;
+                    font-size: 2.5em;
+                    letter-spacing: 5px;
+
+                }
+                .banner_welcome_description {
+                    color: @white;
+                    font-size: 1.2em;
+                    letter-spacing: 5px;
+                }
+            }
+        }
+    }
+    #highlights {
+        background: url("../resources/images/gunnar_05.png") repeat;
+        width: 100%;
+        min-height: 100px;
+        padding-top: 20px;
+        padding-bottom: 50px;
+        .highlight {
+            .make-md-column(4);
+            border-right: 1px solid @light-grey;
+            &:last-child {
+                border-right: none;
+            }
+            h3 {
+                color: @yellow;
+                text-transform: uppercase;
+                font-size: 1.2em;
+            }
+            #who_is_gunnar_video {
+
+            }
+            #magazines {
+
+            }
+        }
+    }
+    #press {
+        #gradient .vertical(@white, #d6d6d6);
+        min-height: 100px;
+        .container {
+            background: url("../resources/images/gunnar_19.png") no-repeat center center;
+            background-size: 100%;
+            height: 85px;
+        }
+    }
+    #footer {
+        border-top: 20px solid @med-dark-grey;
+        padding-top: 20px;
+        color: @offwhite;
+        ul {
+            li {
+                list-style: none;
+            }
+        }
+        .brand {
+            font-size: 1.2em;
+            color: @yellow;
+        }
+        .small {
+            font-size: .9em;
+        }
+        
+    }
+}
