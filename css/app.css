@@ -843,3 +843,4 @@ body #press{background-image:-webkit-gradient(linear, left 0, left 100%, from(#f
 body #footer{border-top:20px solid #262323;padding-top:20px;color:#c5c5c3}body #footer ul li{list-style:none}
 body #footer .brand{font-size:1.2em;color:#fbf728}
 body #footer .small{font-size:.9em}
+.container-non-responsive{margin-left:auto;margin-right:auto;padding-left:15px;padding-right:15px;width:1200px}
