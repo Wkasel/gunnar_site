@@ -34,7 +34,7 @@ module.exports = (grunt) ->
       scripts:
         files: [
           "<%= js.files.dependencies %>", #dependencies
-          "../css/less/*.less", "../vendors/bootstrap/*.less", #less
+          "../css/less/*.less", "../vendors/non-responsive-tb3/*.less",# "../vendors/bootstrap/*.less", #less
           "../js/coffee/*.coffee", #coffee
           "../templates/jade/*.jade", "../templates/jade/**/*.jade","../templates/jade/**/**/*.jade"   #jade
         ]
